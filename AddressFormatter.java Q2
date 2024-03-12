@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+
+public class AddressFormatter {
+
+          public static void main(String[] args )
+          {
+   Scanner input = new Scanner(System.in);
+   String street;
+   int houseNum;
+   String city;
+   int zipCode;
+   String province;
+   
+   System.out.println("Enter your street name :");
+   street = input.nextLine();
+   System.out.println("please enter house of apartment number :");
+   houseNum = input.nextInt();
+   System.out.println("Enter the city you live in :");
+   city = input.nextLine();
+   System.out.println("Enter the city zip code :");
+   zipCode = input.nextInt();
+   System.out.println("Enter the province :");
+   province = input.nextLine();
+   System.out.println("/n" + street + "" + houseNum + "" + city + "" + zipCode + "" + province + "");
+   
+   
+   input.close();//close the Scanner object to release source
+ 
+    }
+}
